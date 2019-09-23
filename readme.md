@@ -1,2 +1,22 @@
-## Empty
-As the name suggests, this project is mostly empty but it is a convenient starting point for new Kha projects. The preferred way to manage Kha projects (the preferred way of Kha's author at least) is to manage all dependencies, including Kha itself, using git submodules. This project is setup to do just that but please keep in mind that it isn't updated very often and therefore usually just points to some random old revision of Kha. See the "Updating Kha" paragraph at https://github.com/Kode/Kha/wiki/Getting-Started for how to update the Kha submodule.
+# Tensorflow.Kha
+
+I tried use pre-built tensorflow 1.14 x86/64bit in Kha project.
+
+```bash
+ .\Kha\make  'windows-hl' --to build
+Using Kha from D:\Projets\repositories\Tensorflow.Kha\Kha
+Creating Kha project.
+Compiling shader 1 of 8 (painter-colored.frag.glsl).
+Compiling shader 2 of 8 (painter-colored.vert.glsl).
+Compiling shader 3 of 8 (painter-image.frag.glsl).
+Compiling shader 4 of 8 (painter-image.vert.glsl).
+Compiling shader 5 of 8 (painter-text.frag.glsl).
+Compiling shader 6 of 8 (painter-video.frag.glsl).
+Compiling shader 7 of 8 (painter-text.vert.glsl).
+Compiling shader 8 of 8 (painter-video.vert.glsl).
+Invalid_argument("index out of bounds")
+
+Haxe compiler error.
+```
+
+:'(
