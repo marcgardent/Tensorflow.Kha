@@ -4,6 +4,7 @@ import kha.Assets;
 import kha.Framebuffer;
 import kha.Scheduler;
 import kha.System;
+import tensorflow.TensorFlow;
 
 class Main {
 	static function update(): Void {
@@ -15,6 +16,8 @@ class Main {
 	}
 
 	public static function main() {
+		trace(TensorFlow.TF_Version());
+		
 		System.start({title: "Kha", width: 800, height: 600}, function (_) {
 			// Just loading everything is ok for small projects
 			Assets.loadEverything(function () {
